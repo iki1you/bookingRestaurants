@@ -171,7 +171,7 @@ PASSWORD_HASHERS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://booking-restaurants-gw5ydxq3z-ik1lyous-projects.vercel.app',
+    'https://booking-restaurants.vercel.app',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
