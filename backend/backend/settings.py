@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'restaraunts.apps.RestarauntsConfig',
     'rest_framework',
     'rest_framework_simplejwt',
-    'corsheaders',
+   # 'corsheaders',
     'django_filters',
     'django_jsonform',
     'rest_framework_simplejwt.token_blacklist',
