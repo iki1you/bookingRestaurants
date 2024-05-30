@@ -23,12 +23,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dvhgxfjrj',
-    'API_KEY': '948143963763924',
-    'API_SECRET': 'IYBydIZbIVj5Xg1aSEEUQHZxQes',
-}
+#CLOUDINARY_STORAGE = {
+#    'CLOUD_NAME': 'dvhgxfjrj',
+#    'API_KEY': '948143963763924',
+#    'API_SECRET': 'IYBydIZbIVj5Xg1aSEEUQHZxQes',
+#}
 
+#DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
