@@ -20,7 +20,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
+#ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
 
 
 INSTALLED_APPS = [
@@ -170,11 +170,11 @@ PASSWORD_HASHERS = [
     "django.contrib.auth.hashers.ScryptPasswordHasher",
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    'https://booking-restaurants.vercel.app',
-]
+#CORS_ALLOWED_ORIGINS = [
+#    'https://booking-restaurants.vercel.app',
+#]
 
-CORS_ALLOW_CREDENTIALS = True
+#CORS_ALLOW_CREDENTIALS = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
