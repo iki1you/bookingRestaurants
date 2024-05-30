@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'restaraunts.apps.RestarauntsConfig',
     'rest_framework',
     'rest_framework_simplejwt',
-   # 'corsheaders',
+    'corsheaders',
     'django_filters',
     'django_jsonform',
     'rest_framework_simplejwt.token_blacklist',
@@ -105,7 +105,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    #'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -174,7 +174,8 @@ PASSWORD_HASHERS = [
 #    'https://booking-restaurants.vercel.app',
 #]
 
-CORS_ALLOW_CREDENTIALS = False
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
