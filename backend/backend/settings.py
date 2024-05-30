@@ -29,7 +29,6 @@ CLOUDINARY_STORAGE = {
     'API_SECRET': 'IYBydIZbIVj5Xg1aSEEUQHZxQes',
 }
 
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -48,7 +47,6 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',
     'cloudinary',
     'cloudinary_storage',
-    'django.contrib.staticfiles',
 ]
 
 REST_FRAMEWORK = {
