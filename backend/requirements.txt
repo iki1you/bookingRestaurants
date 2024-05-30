@@ -5,6 +5,7 @@ django-cors-headers
 django-environ
 django-filter
 django-jsonform
+django-staticfiles
 djangorestframework
 djangorestframework-simplejwt
 drf-nested-routers
