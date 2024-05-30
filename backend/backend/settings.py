@@ -2,7 +2,8 @@ import os
 from datetime import timedelta
 import environ
 from pathlib import Path
-
+import cloudinary
+import cloudinary_storage
 
 READ_DOT_ENV_FILE = True
 
@@ -22,8 +23,17 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
 
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dvhgxfjrj',
+    'API_KEY': '948143963763924',
+    'API_SECRET': 'IYBydIZbIVj5Xg1aSEEUQHZxQes',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 INSTALLED_APPS = [
+    'cloudinary',
+    'cloudinary_storage',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
