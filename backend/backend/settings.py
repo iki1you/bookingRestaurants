@@ -2,8 +2,7 @@ import os
 from datetime import timedelta
 import environ
 from pathlib import Path
-import cloudinary
-import cloudinary_storage
+
 
 READ_DOT_ENV_FILE = True
 
@@ -23,13 +22,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
 
-#CLOUDINARY_STORAGE = {
-#    'CLOUD_NAME': 'dvhgxfjrj',
-#    'API_KEY': '948143963763924',
-#    'API_SECRET': 'IYBydIZbIVj5Xg1aSEEUQHZxQes',
-#}
-
-#DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -46,8 +38,6 @@ INSTALLED_APPS = [
     'django_filters',
     'django_jsonform',
     'rest_framework_simplejwt.token_blacklist',
-    'cloudinary',
-    'cloudinary_storage',
 ]
 
 REST_FRAMEWORK = {
@@ -203,8 +193,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 
-#MEDIA_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'media_root')
-#MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'media_root')
+MEDIA_URL = '/media/'
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
